@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import css from "./FriendListItem.module.css";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
@@ -12,9 +13,9 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
       <p className={css.friendListItemName}>{name}</p>
 
       {isOnline ? (
-        <p className={css.online}>Online</p>
+        <p className={clsx(css.status, isOnline && css.online)}>Online</p>
       ) : (
-        <p className={css.offline}>Offline</p>
+        <p className={css.status}>Offline</p>
       )}
     </div>
   );

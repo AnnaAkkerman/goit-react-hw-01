@@ -3,12 +3,11 @@
   height: 95px;
 }
 
-.online {
-  font-size: 20px;
-  color: rgb(11, 170, 46);
-}
-
-.offline {
+.status {
   font-size: 20px;
   color: rgb(223, 13, 13);
+}
+
+.status.online {
+  color: rgb(11, 170, 46);
 }
