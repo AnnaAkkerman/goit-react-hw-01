@@ -1,0 +1,71 @@
+.profile {
+  border: 3px solid #111;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  font-size: 31px;
+  color: rgb(163, 163, 162);
+}
+
+.profileImage {
+  border-radius: 50%;
+  background-color: rgb(53, 53, 53);
+  width: 260px;
+  height: 260px;
+  margin-bottom: 40px;
+}
+
+.profileName {
+  font-weight: 700;
+  color: black;
+  font-size: 37px;
+}
+
+.profileStats {
+  display: flex;
+  border-top: 3px solid rgb(163, 163, 162);
+  font-size: 23px;
+  background-color: rgb(206, 206, 205);
+  text-align: center;
+}
+
+.profileStatsItem {
+  padding: 20px 0;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.profileStatsItem:last-child {
+  margin-bottom: 0;
+}
+
+.profileStatsItem:not(:last-child) {
+  border-right: 3px solid rgb(163, 163, 162);
+}
+
+.profileStatsItemData {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .profileCard {
+    font-size: 51px;
+  }
+
+  .profileName {
+    font-size: 57px;
+  }
+
+  .profileStats {
+    font-size: 43px;
+  }
+}
